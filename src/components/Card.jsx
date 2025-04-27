@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import Tabs from './Tabs'
 import Cards from './Cards'
 import { tabTitle } from '../data'
@@ -10,7 +11,11 @@ export default function Card() {
         )
     })
 
-    const { courses } = useCourseStore()
+    const { courses, fetchCourses } = useCourseStore()
+
+    useEffect(() => {
+        fetchCourses()
+    }, [])
 
     return (
         <section className="card-section">
@@ -23,10 +28,10 @@ export default function Card() {
             </div>
             <div className="card-container">
                 {
-                courses.length === 0 ? <p className="no-courses">No courses available.</p> :
-                courses.map((course) => (
-                    <Cards key={course.id} img='/card-1.jpg' avatar='/avatar-card-1.png' course={course} />
-                ))}
+                    courses.length === 0 ? <p className="no-courses">No courses available.</p> :
+                        courses.map((course) => (
+                            <Cards key={course.id} img={`/card-${course.id % 9}.jpg`} avatar={`/avatar-card-${course.id % 9}.png`} course={course} />
+                        ))}
             </div>
         </section>
     )
