@@ -20,14 +20,14 @@ function CourseList({ setEditCourse }) {
                         <span>Selesai</span>
                     </div>
                     <div className="course-body">
-                        <img src="/card-1.jpg" alt="" />
+                        <img src={`/card-${course.id % 9}.jpg`} alt="" />
                         <div className="course-description">
                             <div className="cd-1">
                                 <h6>{course.title}</h6>
                                 <p>{course.description}</p>
                             </div>
                             <div className="cd-2">
-                                <img src="/avatar-card-1.png" alt="" />
+                                <img src={`/avatar-card-${course.id % 9}.png`} alt="" />
                                 <div className="cd-2-1">
                                     <p>{course.author}</p>
                                     <p>Senior Accountant di Gojek</p>
