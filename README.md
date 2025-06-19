@@ -1,12 +1,70 @@
-# React + Vite
+# Edu Course App 🎓
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern educational course web application built with **React**, designed to provide an intuitive and responsive user experience. It features user authentication, course management with full CRUD functionality, and utilizes modern frontend tools for seamless performance.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Deployed on **Vercel**  
+👉 [View Live App](https://edu-course-app.vercel.app/) 
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **React** – Frontend framework
+- **Vite** – Fast build tool and dev server
+- **Zustand** – Lightweight state management
+- **React Router** – Client-side routing
+- **Axios** – HTTP client for API calls
+- **MockAPI** – Fake backend for simulating REST APIs
+- **HTML & CSS** – Markup and styling
+- **Vercel** – Deployment platform
+
+---
+
+## ✨ Features
+
+- 🔐 **Authentication**
+  - User login & registration
+- 📚 **CRUD Operations**
+  - Create, read, update, and delete courses
+- 📱 **Responsive Design**
+  - Fully responsive layout for mobile and desktop
+- 🧭 **Routing**
+  - Multi-page navigation with React Router
+- 🌐 **API Integration**
+  - Real-time data interaction using Axios and MockAPI
+- ⚙️ **State Management**
+  - Manage application state efficiently with Zustand
+
+---
+
+## 📸 Screenshot
+
+![Indonesian Resto App](./screenshot.png)
+
+## 🛠️ How to Run Locally
+
+To run this project on your local machine:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/argus1995/edu-course-app.git
+cd edu-course-app
+
+# 2. Install the dependencies
+npm install
+
+# 3. Start the development server
+npm run dev
+```
+
+📦 Build for Production
+
+```bash
+npm run build
+```
+
+## 📝 License
+
+This project is open-source and available under the MIT License.
